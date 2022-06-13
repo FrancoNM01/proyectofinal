@@ -1,0 +1,76 @@
+@import "_variables";
+@import "_mixins";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parrafo{
+    padding: map-get($parrafo , padding );
+    color: $colorBlanco;
+        font-size: map-get($parrafo , tamaño );
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform:uppercase
+        }
+
+       
+ .parrafoC{
+       @extend .parrafo;
+        padding: 18px;
+        font-size: 25px;
+        text-align: center;
+            
+                    
+ }           
+        
+
+
+        
+.campeones{
+            display: flex;
+            justify-content: center;
+            color: $colorBlanco;
+            font-size: 50px;
+            font-family:fantasy
+    }                         
+body{
+    background-color: $colorFondo;
+}        
+
+
+.containerDos{
+    @include contenedores(flex,center ,center ,49px )
+   
+
+    
+}
+.emaila{
+    color: $colorBlanco;
+}
+
+.boton {
+    border: 0px;
+    padding: 10px 15px;
+    radio: 5px;
+    
+
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.contactoMain {
+    height: 660px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.campeonesDos{
+    display: flex;
+    justify-content: center;
+    color: $colorBlanco;
+    font-size: 40px;
+    font-family:fantasy
+}
